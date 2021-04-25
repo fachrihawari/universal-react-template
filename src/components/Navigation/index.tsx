@@ -41,7 +41,7 @@ function App() {
           }
           routeNameRef.current = currentRouteName;
         }}>
-        <Stack.Navigator>
+        <Stack.Navigator screenOptions={{ animationEnabled: true }}>
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="About" component={AboutScreen} />
         </Stack.Navigator>
