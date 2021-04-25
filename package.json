@@ -12,9 +12,17 @@
     "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@react-native-masked-view/masked-view": "^0.2.4",
+    "@react-navigation/core": "^5.15.3",
+    "@react-navigation/native": "^5.9.4",
+    "@react-navigation/stack": "^5.14.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-native": "0.64.0",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.1.0",
+    "react-native-safe-area-context": "^3.2.0",
+    "react-native-screens": "^3.1.1",
     "react-native-web": "^0.16.1",
     "web-vitals": "^1.1.1"
   },
@@ -23,7 +31,9 @@
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/react-native": "^0.64.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-react-native-web": "^0.16.1",
+    "customize-cra": "^1.0.0",
     "eslint": "^7.14.0",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-app-rewired": "^2.1.8",

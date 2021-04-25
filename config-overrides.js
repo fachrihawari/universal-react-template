@@ -1,23 +1,41 @@
 const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
+const {
+  override,
+  addBabelPlugin,
+  addWebpackPlugin,
+  removeModuleScopePlugin,
+  addWebpackModuleRule,
+} = require('customize-cra');
 
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 
 module.exports = {
-  webpack: function (config, env) {
-    config.resolve.plugins = config.resolve.plugins.filter(
-      plugin => plugin.constructor.name !== 'ModuleScopePlugin',
-    );
-    config.module.rules[1].oneOf[2].options.plugins = [
-      require.resolve('babel-plugin-react-native-web'),
-    ].concat(config.module.rules[1].oneOf[2].options.plugins);
-    config.plugins.push(
-      new webpack.DefinePlugin({ __DEV__: env !== 'production' }),
-    );
-    return config;
-  },
+  webpack: override(
+    removeModuleScopePlugin(),
+    addBabelPlugin('babel-plugin-react-native-web'),
+    addBabelPlugin([
+      'babel-plugin-module-resolver',
+      {
+        root: ['./src'],
+        extensions: ['.js', '.ts', '.tsx', '.json'],
+      },
+    ]),
+    addWebpackPlugin(
+      new webpack.DefinePlugin({
+        __DEV__: process.env.NODE_ENV !== 'production',
+      }),
+    ),
+    addWebpackModuleRule({
+      test: /\.(jpg|png|gif)$/,
+      loader: 'file-loader',
+      options: {
+        esModule: false,
+      },
+    }),
+  ),
   paths: function (paths) {
     paths.appPublic = resolveApp('web');
     paths.appHtml = resolveApp('web/index.html');
