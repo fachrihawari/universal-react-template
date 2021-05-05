@@ -1,6 +1,6 @@
 # Universal React Template
 
-This is a template for developing app for android, ios, and web using React technology.
+This is a template for developing app for Android, iOS, Web and Desktop using React technology.
 
 ## Tech stack
 
@@ -8,6 +8,7 @@ This is a template for developing app for android, ios, and web using React tech
 - React
 - React Native
 - React Native Web
+- Electron
 
 ## How to use
 
@@ -35,4 +36,5 @@ This is a template for developing app for android, ios, and web using React tech
    yarn android # run the android app
    yarn ios # run the ios app
    yarn web # run the web app
+   yarn desktop # run the desktop app
    ```
