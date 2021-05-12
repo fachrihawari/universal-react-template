@@ -15,7 +15,7 @@ This is a template for developing app for Android, iOS, Web and Desktop using Re
 1. Clone project
 
    ```bash
-   git clone https://github.com/fachrihawari/universal-react-template
+   git clone https://github.com/fachrihawari/universal-react-template.git
    ```
 
 2. Enter directory project
@@ -31,7 +31,7 @@ This is a template for developing app for Android, iOS, Web and Desktop using Re
    cd ios && pod install
    ```
 
-4. Run the apa
+4. Run the apps
    ```bash
    yarn android # run the android app
    yarn ios # run the ios app

@@ -13,9 +13,9 @@ function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to Universal React App!</Text>
+      <Text style={styles.welcome}>Welcome to Universal React Template!</Text>
       <Text style={styles.instructions}>
-        To get started, edit packages/shared/src/index.tsx
+        To get started, edit{' '}<Text style={styles.sourceFile}>src/screens/HomeScreen.tsx</Text>
       </Text>
       <Text style={styles.instructions}>{instructions}</Text>
       <Button title="Go to About" onPress={() => navigate('About')} />
@@ -44,6 +44,9 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
     opacity: 1,
+  },
+  sourceFile: {
+    fontWeight: '800',
   },
 });
 
