@@ -1,5 +1,17 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
     "paths": {
       "*": ["src/*"]
     }

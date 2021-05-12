@@ -37,11 +37,13 @@ module.exports = {
     }),
   ),
   paths: function (paths) {
-    paths.appPublic = resolveApp('web');
-    paths.appHtml = resolveApp('web/index.html');
-    paths.appBuild = resolveApp('build/web');
-    paths.swSrc = resolveApp('src/serviceWorker.ts');
-
-    return paths;
+    return {
+      ...paths,
+      appPublic: resolveApp('web'),
+      appHtml: resolveApp('web/index.html'),
+      appBuild: resolveApp('build/web'),
+      swSrc: resolveApp('src/libraries/serviceWorker.ts'),
+      appIndexJs: resolveApp('index.web.js'),
+    };
   },
 };

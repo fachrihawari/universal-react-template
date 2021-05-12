@@ -1,27 +1,5 @@
 {
   "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "lib": [
-      "ES2017",
-      "DOM",
-      "DOM.Iterable"
-    ],
-    "allowJs": true,
-    "jsx": "react-jsx",
-    "noEmit": true,
-    "isolatedModules": true,
-    "strict": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": false,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
-    "baseUrl": "."
-  },
   "exclude": [
     "node_modules",
     "babel.config.js",
@@ -30,5 +8,15 @@
   ],
   "include": [
     "src"
-  ]
+  ],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "ES2017",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "allowJs": true
+  }
 }
