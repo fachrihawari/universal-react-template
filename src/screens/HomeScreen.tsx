@@ -15,7 +15,8 @@ function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.welcome}>Welcome to Universal React Template!</Text>
       <Text style={styles.instructions}>
-        To get started, edit{' '}<Text style={styles.sourceFile}>src/screens/HomeScreen.tsx</Text>
+        To get started, edit{' '}
+        <Text style={styles.sourceFile}>src/screens/HomeScreen.tsx</Text>
       </Text>
       <Text style={styles.instructions}>{instructions}</Text>
       <Button title="Go to About" onPress={() => navigate('About')} />
