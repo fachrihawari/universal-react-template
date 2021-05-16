@@ -20,7 +20,7 @@ module.exports = {
       'babel-plugin-module-resolver',
       {
         root: ['./src'],
-        extensions: ['.js', '.ts', '.tsx', '.json'],
+        extensions: ['.js', '.ts', '.tsx', '.json', '.web.ts', '.web.tsx'],
       },
     ]),
     addWebpackPlugin(

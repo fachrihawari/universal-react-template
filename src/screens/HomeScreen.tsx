@@ -1,6 +1,7 @@
 import React from 'react';
 import { Platform, StyleSheet, Text, View, Button } from 'react-native';
 import { navigate } from 'libraries/navigation';
+import Example from 'components/common/Example';
 
 function HomeScreen() {
   const instructions = Platform.select({
@@ -14,6 +15,7 @@ function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>Welcome to Universal React Template!</Text>
+      <Example />
       <Text style={styles.instructions}>
         To get started, edit{' '}
         <Text style={styles.sourceFile}>src/screens/HomeScreen.tsx</Text>
