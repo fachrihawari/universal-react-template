@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Android component rendered successfully 1`] = `
+<Text>
+  Example on Android
+</Text>
+`;
+
+exports[`Web component rendered successfully 1`] = `
+<Text>
+  Example on Web
+</Text>
+`;
+
+exports[`iOS component rendered successfully 1`] = `
+<Text>
+  Example on iOS
+</Text>
+`;
