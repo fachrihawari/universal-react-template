@@ -1,4 +1,7 @@
 build
 android
 ios
+desktop
+web
 node_modules
+coverage
