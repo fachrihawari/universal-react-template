@@ -8,10 +8,11 @@
     "ios": "react-native run-ios",
     "mobile": "react-native start",
     "web": "react-app-rewired start",
-    "desktop":  "concurrently --kill-others \"npm run web\" \"electron index.desktop.js\"",
+    "desktop": "concurrently --kill-others \"npm run web\" \"electron index.desktop.js\"",
     "build:web": "react-app-rewired build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "jest"
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.2.4",
@@ -34,16 +35,23 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@testing-library/jest-native": "^4.0.1",
+    "@testing-library/react-native": "^7.2.0",
+    "@types/jest": "^26.0.23",
     "@types/react-native": "^0.64.0",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel-jest": "^26.6.3",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-react-native-web": "^0.16.1",
     "concurrently": "^6.0.2",
     "customize-cra": "^1.0.0",
     "electron": "^12.0.6",
     "eslint": "^7.14.0",
+    "jest": "^26.6.3",
     "metro-react-native-babel-preset": "^0.64.0",
     "react-app-rewired": "^2.1.8",
     "react-scripts": "4.0.3",
+    "react-test-renderer": "^17.0.2",
     "typescript": "^4.0.0"
   },
   "resolutions": {
