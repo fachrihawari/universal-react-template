@@ -11,7 +11,8 @@
     "desktop": "concurrently --kill-others \"npm run web\" \"electron index.desktop.js\"",
     "build:web": "react-app-rewired build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "format": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "test": "jest"
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.2.4",

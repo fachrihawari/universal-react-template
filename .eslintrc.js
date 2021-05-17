@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   extends: '@react-native-community',
   env: {
-    jest: true
+    jest: true,
   },
   rules: {
     'no-unused-vars': 'off',
